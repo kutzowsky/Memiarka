@@ -20,9 +20,9 @@ font_path = f'/tmp/{FONT}'
 s3.download_file(INPUT_BUCKET, PINGU_TEMPLATE, template_path)
 s3.download_file(INPUT_BUCKET, FONT, font_path)
 
-pingu_meme = PinguMeme('/tmp/')
-
 def lambda_handler(event, context):
+    pingu_meme = PinguMeme('/tmp/')
+
     first_line = event['queryStringParameters']['firstLine']
     second_line = event['queryStringParameters']['secondLine']
 
