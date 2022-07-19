@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pl" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Memiarka</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Pingu generator</h1>
+      <article id="generator-container">
+        <form action="#" id="generator-form">
+          <div>
+            <label for="first-line">
+              Pierwsza linia tekstu
+              <input type="text" id="first-line" name="first-line" placeholder="Jest generator?" required>
+            </label>
+        
+            <label for="second-line">
+              Druga linia tekstu
+              <input type="text" id="second-line" name="second-line" placeholder="Teraz to już nie chcę!" required>
+            </label>
+          </div>
+
+          <div id="error-text-container" class="center-items margin-top-small not-visible" >
+            <p class="error-text">Coś poszło nie tak. Skontaktuj się z najbliższym kopytnym, lekarzem lub farmaceutą.</p>
+          </div>
+
+          <div class="center-items margin-top-small">
+            <button type="submit" id="generate-button" role="button">Noot noot!</button>
+          </div>
+        </form>
+      </article>
+
+      <article id="result-container" class="center-items not-visible">
+        <img src="#" id="meme-image" alt="pigu meme">
+
+        <div class="margin-top-small">        
+          <a role="button" href="#" download="pingu.png" id="download-button" role="button">Pobierz</a>
+          <a role="button" href="#" onclick="onResetButtonClick()" id="again-button" role="button">Jeszcze raz</a>
+        </div>
+      </article>
+    </main>
+  </body>
+
+  <script src="app.js"></script>
+</html>

@@ -1,0 +1,30 @@
+button,
+[role="button"] {
+    width: 20vw;
+}
+
+#download-button {
+    margin-right: 2vw
+}
+
+#result-container {
+    flex-direction: column;
+}
+
+.not-visible {
+    display: none !important;
+}
+
+.center-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.margin-top-small {
+    margin-top: 5vh;
+}
+
+.error-text {
+    color: rgb(236, 0, 0);
+}
